@@ -1,0 +1,113 @@
+.header {
+    background-color: #ffffff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+    &__container {
+        display: flex;
+    }
+    &__logo {
+        margin-right: 93px;
+    }
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--second-main-color);
+   
+}
+
+.logo-ref-web {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__list {
+        display: flex;
+        column-gap: 50px;
+        &::after {
+            content: '';
+            width: 48px;
+            height: 4px;
+            background-color: var(--second-main-color);
+            position: absolute;
+            top: 170%;
+            left: -2px;
+        }
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--main-title-color);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: var(--second-main-color);
+        }
+    }
+}
+
+.contacts {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    margin-left: auto;
+    &__email,
+    &__tel {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--main-body-color);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--second-main-color);
+        }
+    }
+    &__icon-01 {
+        margin-right: 10px;
+        fill: var(--main-body-color);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        .contacts__email:hover &,
+        .contacts__email:focus & {
+            fill: var(--second-main-color);
+        }
+    }
+
+    &__icon-02 {
+        margin-right: 10px;
+        fill: var(--main-body-color);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        .contacts__tel:hover &,
+        .contacts__tel:focus & {
+            fill: var(--second-main-color);
+        }
+    }
+}
+

@@ -1,0 +1,62 @@
+.traits {
+    background-color: #fff;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    &__icon {
+        display: inline-flex;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        border-radius: 4px;
+
+        &.with-bgr {
+            background-color: #F5F4FA;
+        }
+
+        &.with-icon-01 {
+            background-image: url(../img/aerial-img.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &.with-icon-02 {
+            background-image: url(../img/clock-img.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &.with-icon-03 {
+            background-image: url(../img/diagr-img.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &.with-icon-04 {
+            background-image: url(../img/astro-img.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--main-title-color);
+        margin-bottom: 10px;
+    }
+    &__descr {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--main-body-color);
+    }
+}
+
+
+

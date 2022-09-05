@@ -1,46 +1,57 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    &-title {
+    &__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 1.18;
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+    }
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 50px;
     }
-    &-list {
-    display: flex;
-    justify-content: space-between;
-    }
 }
-
-.client-link {
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    border: 1px solid #AFB1B8;
+.companies {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        border: 1px solid var(--second-main-color);
+    gap: 30px;
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    &__link {
+        width: 170px;
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 3)
+        }
+        @media screen and (min-width: 768px) {
+            width: 170px
+        }
+        height: 92px;
+        border-radius: 4px;
+        border: 1px solid #AFB1B8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            border: 1px solid var(--second-main-color);
+        }
+    }
+    &__icon {
+        fill: #AFB1B8;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        .companies__link:hover &,
+        .companies__link:focus & {
+            fill: var(--second-main-color);
+        }
     }
 }
-
-.client-icon {
-    fill: #AFB1B8;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    .client-link:hover &,
-    .client-link:focus & {
-        fill: var(--second-main-color);
-    }
-}
-

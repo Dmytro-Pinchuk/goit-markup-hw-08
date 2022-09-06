@@ -16,18 +16,20 @@
 .companies {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
     @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
         justify-content: space-between;
     }
-    &__link {
-        width: 170px;
+    &__item {
+        width: calc((100% - 30px) / 2);
         @media screen and (min-width: 768px) {
-            width: calc((100% - 30px) / 3)
+            width: calc((99% - 30px) / 3)
         }
-        @media screen and (min-width: 768px) {
+    }
+    &__link {
+        width: 100%;
+        @media screen and (min-width: 1200px) {
             width: 170px
         }
         height: 92px;

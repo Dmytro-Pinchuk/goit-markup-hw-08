@@ -480,6 +480,16 @@ img {
   flex-direction: column;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .hero__container {
+    padding: 118px 204px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding: 118px 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__container {
     padding: 200px 200px;
@@ -819,7 +829,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .companies__item {
-    width: calc((99% - 30px) / 3);
+    width: calc((95.9% - 30px) / 3);
   }
 }
 .companies__link {

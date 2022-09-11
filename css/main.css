@@ -454,7 +454,7 @@ img {
 @media screen and (min-width: 480px) {
   .mob-menu__tel {
     font-size: 34px;
-    line-height: 40px;
+    line-height: 41px;
   }
 }
 
@@ -462,7 +462,6 @@ img {
   display: flex;
   gap: 20px;
   margin-bottom: 48px;
-  width: 100%;
 }
 .mob-soc__item {
   position: relative;

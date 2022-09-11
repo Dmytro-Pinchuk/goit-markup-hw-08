@@ -7,10 +7,7 @@
         height: 4px;
         background-color: var(--second-main-color);
         position: absolute;
-        top: 127%;
-        @media screen and (min-width: 1200px) {
-            top: 170%;
-        }
+        top: 255%;
         left: 93px;
     }
 }

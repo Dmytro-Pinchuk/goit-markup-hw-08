@@ -549,13 +549,8 @@ img {
   height: 4px;
   background-color: var(--second-main-color);
   position: absolute;
-  top: 127%;
+  top: 255%;
   left: -2px;
-}
-@media screen and (min-width: 1200px) {
-  .navigation__list::after {
-    top: 170%;
-  }
 }
 .navigation__link {
   font-weight: 500;
@@ -1283,13 +1278,8 @@ img {
   height: 4px;
   background-color: var(--second-main-color);
   position: absolute;
-  top: 127%;
+  top: 255%;
   left: 93px;
-}
-@media screen and (min-width: 1200px) {
-  .navigation__list-port::after {
-    top: 170%;
-  }
 }
 
 .filter-btn {

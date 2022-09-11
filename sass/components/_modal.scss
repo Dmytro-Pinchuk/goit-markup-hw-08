@@ -8,7 +8,7 @@
 }
 
 .modal-win {
-    width: 450px;
+    width: calc(100% - 30px);
     @media screen and (min-width: 768px) {
         width: 528px;
     }
@@ -29,8 +29,12 @@
 
 .modal-title {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    font-size: 14px;
+    line-height: 16px;
+    @media screen and (min-width: 480px) {
+        font-size: 20px;
+        line-height: 1.15;
+    }
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;

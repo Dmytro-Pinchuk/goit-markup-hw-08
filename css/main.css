@@ -101,7 +101,7 @@ img {
 }
 
 .modal-win {
-  width: 450px;
+  width: calc(100% - 30px);
   min-height: 581px;
   background-color: #fff;
   border-radius: 4px;
@@ -124,13 +124,19 @@ img {
 
 .modal-title {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  font-size: 14px;
+  line-height: 16px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .modal-title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal-comment {

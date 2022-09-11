@@ -9,6 +9,8 @@
     border-bottom: 1px solid #ECECEC;
     &__container {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     &__logo {
         margin-right: 93px;
@@ -63,7 +65,10 @@
             height: 4px;
             background-color: var(--second-main-color);
             position: absolute;
-            top: 170%;
+            top: 127%;
+            @media screen and (min-width: 1200px) {
+                top: 170%;
+            }
             left: -2px;
         }
     }
@@ -87,6 +92,14 @@
     display: none;
     @media screen and (min-width: 768px) {
         display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
     }
     column-gap: 50px;
     align-items: center;

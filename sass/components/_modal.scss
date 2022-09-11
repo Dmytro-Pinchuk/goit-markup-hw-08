@@ -8,7 +8,10 @@
 }
 
 .modal-win {
-    width: 528px;
+    width: 450px;
+    @media screen and (min-width: 768px) {
+        width: 528px;
+    }
     min-height: 581px;
     background-color: #fff;
     border-radius: 4px;
@@ -189,8 +192,12 @@
 
 .check-text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 14px;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
     letter-spacing: 0.03em;
     color: rgba(117, 117, 117, 1);
     display: flex;

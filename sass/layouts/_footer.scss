@@ -8,6 +8,7 @@
         @media screen and (min-width: 1200px) {
             flex-direction: row;
             flex-wrap: nowrap;
+            justify-content: space-between;
         }
     }
     &__email,
@@ -24,7 +25,9 @@
     &__soc-box {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
         width: 206px;
         margin-left: 5px;
     }
@@ -77,9 +80,8 @@
             gap: 70px;
             text-align: start;
         }
-        margin: 0 auto 60px auto;
-        @media screen and (min-width: 1200px) {
-            margin: 0 93px 60px 0;
+        @media screen and (min-width: 768px) {
+            margin: 0 auto 60px auto;
         }
     }
 }

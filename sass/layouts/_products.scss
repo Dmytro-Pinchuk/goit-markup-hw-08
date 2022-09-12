@@ -1,18 +1,14 @@
 .products {
     background-color: #fff;
-    &__container {
-        padding: 60px 0;
-        @media screen and (min-width: 1200px) {
-            padding: 94px 0;
-        }
-    }
 }
 
 .prod-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    @media screen and (min-width: 1200px) {
+        align-items: center;
+        justify-content: center;
+    }
     gap: 30px;
 }
 
@@ -84,7 +80,7 @@
         }
         top: 0;
         left: 0;
-        padding: 77px 24px;
+        padding: 20px 24px;
         @media screen and (min-width: 1200px) {
             padding: 63px 24px;
         }

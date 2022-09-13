@@ -118,7 +118,7 @@ img {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal-win {
     width: 528px;
   }
@@ -618,13 +618,19 @@ img {
 }
 .contacts__email, .contacts__tel {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.02em;
   color: var(--main-body-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__email, .contacts__tel {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .contacts__email:hover, .contacts__email:focus, .contacts__tel:hover, .contacts__tel:focus {
   color: var(--second-main-color);
@@ -925,12 +931,17 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 1200px) {
   .gallery__title {
     font-size: 36px;
     line-height: 1.16;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .gallery__title {
+    margin-bottom: 30px;
   }
 }
 
@@ -1022,12 +1033,17 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
     font-size: 36px;
     line-height: 1.16;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .clients__title {
+    margin-bottom: 30px;
   }
 }
 
@@ -1088,6 +1104,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
@@ -1111,6 +1128,11 @@ img {
   flex-direction: column;
   width: 206px;
   margin-left: 5px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__soc-box {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 1199px) {
   .footer__soc-box {
@@ -1170,7 +1192,7 @@ img {
     text-align: start;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer__wrap {
     margin: 0 auto 60px auto;
   }
@@ -1343,14 +1365,17 @@ img {
   align-items: baseline;
   justify-content: baseline;
   gap: 8px;
-  margin-bottom: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
   .filter-btn-list {
     align-items: center;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .filter-btn-list {
+    margin-bottom: 30px;
   }
 }
 
@@ -1371,7 +1396,7 @@ img {
 }
 
 .prod-item {
-  width: calc(100% - 30px);
+  width: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

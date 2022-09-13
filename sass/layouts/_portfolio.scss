@@ -44,9 +44,10 @@
             justify-content: center;
         }
         gap: 8px;
-        margin-bottom: 30px;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-bottom: 50px;
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 30px;
+        }
     }
 }
 
